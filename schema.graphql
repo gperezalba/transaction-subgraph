@@ -1,6 +1,13 @@
-type ExampleEntity @entity {
+type Holder @entity {
   id: ID!
-  count: BigInt!
-  sender: Bytes! # address
-  receiver: Bytes! # address
+  balance: BigInt!
+}
+
+type Transaction @entity {
+  id: ID!
+  from: Bytes!
+  to: Bytes!
+  amount: BigInt!
+  concept: String
+  eventAddress: String
 }
