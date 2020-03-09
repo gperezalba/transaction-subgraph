@@ -10,4 +10,5 @@ type Transaction @entity {
   amount: BigInt!
   concept: String
   eventAddress: String
+  timestamp: BigInt
 }
